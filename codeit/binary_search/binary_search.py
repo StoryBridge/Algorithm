@@ -11,6 +11,7 @@ def binary_search(element, some_list, start_index=0, end_index=None):
     if element not in some_list:
         return None
     
+    # recursion case
     if element < some_list[temp_index]:
         return binary_search(element, some_list, 0, temp_index)
     elif element > some_list[temp_index]:        
